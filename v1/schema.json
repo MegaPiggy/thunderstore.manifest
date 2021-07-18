@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/ash-hat/thunderstore.manifest.v1/main/schema.json",
+  "$id": "https://raw.githubusercontent.com/ash-hat/thunderstore.manifest.v1/main/v1/schema.json",
   "type": "object",
   "title": "The manifest",
   "description": "The manifest object encompasses your entire manifest.",
@@ -24,7 +24,6 @@
   ],
   "properties": {
     "name": {
-      "$id": "#/properties/name",
       "type": "string",
       "title": "Name",
       "description": "Name of the mod",
@@ -34,7 +33,6 @@
       ]
     },
       "description": {
-      "$id": "#/properties/description",
       "type": "string",
       "title": "Description",
       "description": "A short description of the mod, shown on the mod list. 250 characters max.",
@@ -44,7 +42,6 @@
       ]
     },
     "version_number": {
-      "$id": "#/properties/version_number",
       "type": "string",
       "title": "Version Number",
       "description": "Version number of the mod, following semantic version format Major.Minor.Patch.",
@@ -54,13 +51,10 @@
       ]
     },
     "dependencies": {
-      "$id": "#/properties/dependencies",
       "type": "array",
       "title": "Dependencies",
       "description": "List of other packages that are required for this package to function.",
-      "uniqueItems": true,
       "items": {
-        "$id": "#/properties/dependencies/items",
         "type": "string",
         "title": "A dependency",
         "description": "A single dependency of the mod",
@@ -68,16 +62,20 @@
         "examples": [
           "AshHat-TestDependency-1.0.0"
         ]
-      }
+      },
+      "uniqueItems": true,
+      "additionalItems": false
     },
     "website_url": {
-      "$id": "#/properties/website_url",
       "type": "string",
       "title": "Website URL",
       "description": "URL to the mod's website (e.g. GitHub repo). Can be an empty string.",
+      "examples": [
+        "",
+        "https://example.com/"
+      ],
       "oneOf": [
         {
-          "$id": "#/properties/website_url/oneOf/0",
           "type": "string",
           "title": "No website",
           "description": "An empty URL, for when you have no website.",
@@ -87,19 +85,14 @@
           ]
         },
         {
-          "$id": "#/properties/website_url/oneOf/1",
           "type": "string",
           "title": "A website",
           "description": "A complete URL",
           "pattern": "^https?:\\/\\/[a-z0-9\\.]{4,255}",
           "examples": [
             "https://example.com/"
-        ]
-      }
-      ],
-      "examples": [
-        "",
-        "https://example.com/"
+          ]
+        }
       ]
     }
   }

@@ -5,11 +5,11 @@ Do note: you **cannot** copy and paste the example files. The `$schema` property
 
 ## How to use the schemas
 First, you need an editor that supports JSON Schema v7. I personally recommend Visual Studio Code.  
-Once you have an editor, simply create a new JSON file with the `$schema` property. It should point to a schema file hosted in this repository. For example, for manifest v1:
+Once you have an editor, simply create a new JSON file with the `$schema` property. It should point to a schema file hosted in this repository. For example, for r2modman-flavored manifest v1:
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/ash-hat/thunderstore.manifest/v1/schema.json"
+  "$schema": "https://raw.githubusercontent.com/ash-hat/thunderstore.manifest/v1/r2modman/schema.json"
 }
 ```
 

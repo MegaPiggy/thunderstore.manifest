@@ -9,7 +9,7 @@ Once you have an editor, simply create a new JSON file with the `$schema` proper
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/malicean/thunderstore.manifest/main/v1/r2modman/schema.json"
+  "$schema": "https://raw.githubusercontent.com/MegaPiggy/thunderstore.manifest/main/v1/r2modman/schema.json"
 }
 ```
 

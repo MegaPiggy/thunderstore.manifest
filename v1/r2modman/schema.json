@@ -6,6 +6,18 @@
       "$ref": "https://raw.githubusercontent.com/malicean/thunderstore.manifest/main/v1/schema.json"
     }
   ],
+  "examples": [
+    {
+      "author": "TestAuthor",
+      "name": "TestMod",
+      "version_number": "1.1.0",
+      "website_url": "https://github.com/thunderstore-io",
+      "description": "This is a description for a mod. 250 characters max",
+      "dependencies": [
+        "AshHat-TestDependency-1.0.0"
+      ]
+    }
+  ],
   "properties": {
     "author": {
       "type": "string",

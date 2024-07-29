@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/ash-hat/thunderstore.manifest.v1/main/v1/schema.json",
+  "$id": "https://raw.githubusercontent.com/malicean/thunderstore.manifest/main/v1/schema.json",
   "type": "object",
   "title": "The manifest",
   "description": "The manifest object encompasses your entire manifest.",
